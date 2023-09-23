@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIOL - Schem Converter</title>
+    <link rel="stylesheet" href="../style/mainStlye.css">
+    <link rel="stylesheet" href="../style/schemSchematic.css">
+    <script src="../scripts/schemSchematic/zlib.js"></script>
+    <script src="../scripts/schemSchematic/nbt.js"></script>
+    <script src="../scripts/schemSchematic/schem-schematic.js"></script>
+    <script src="../scripts/schemSchematic/main.js" defer></script>
+    <script src="../scripts/login.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="../media/background.jpg" alt="Background" id="backgroundImage">
+        <nav>
+            <a href="../index.html"><img src="../media/Logo.png" alt="Logo" id="logo"></a>
+            <ul id="navList">
+                <li><a href="schemMatCalc.html">Schematic Material Calculator</a></li>
+                <li><a href="schemSchematic.html">Schematic Converter</a></li>
+            </ul>
+            <p>Navigate</p>
+        </nav>
+        <main>
+            <div id="title" class="disabled">
+                <h1>Schematic Converter</h1>
+            </div>
+            
+            <div id="converter">
+                <label for="schematicUpload" id="uploadLabel" class="DLBDisabled">
+                    <p class="withoutInput" id="uploadText">Upload .schem File here</p>
+                </label>
+                <div id="downloadBox" class="DLBEnabled" style="display: none;" onclick="download()">
+                    
+                </div>
+            </div>
+        </main>
+        <input type="file" name="schematicUpload" id="schematicUpload" accept=".schem">
+        <a style="display: none" id="fileDownload"></a>
+        <img src="../media/Document.png" alt="DocumentPreloader" style="display: none;">
+    </div>
+</body>
+</html>

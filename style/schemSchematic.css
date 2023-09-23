@@ -1,0 +1,90 @@
+* {
+    transition: 0.7s ease-in-out;
+}
+
+body, #wrapper {
+    height: 100vh;
+}
+
+#title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: all 0.7s ease-in-out;
+    width: 100%;
+    transform: translateY(-110%);
+    margin-bottom: 10vh;
+}
+
+#title>h1 {
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 120;
+    transform: translateY(-50%);
+}
+
+nav:hover~main>#title {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#schematicUpload {
+    display: none;
+}
+
+#uploadLabel, #downloadBox {
+    display: inherit;
+    width: 96%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: translateX(2%);
+}
+
+.DLBDisabled {
+    height: 75vh;
+}
+
+.DLBEnabled {
+    height: 35vh;
+}
+
+#uploadLabel > p {
+    color: #333333;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+#downloadBox > p {
+    color: #333333;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.withoutInput {
+    font-size: 2.5vw;
+    transform: translateY(29.25vh);
+    letter-spacing: 8px;
+}
+
+.withInput {
+    transform: translateY(20%);
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+}
+
+#downloadBox {
+    margin-top: 5vh;
+}
+
+#file {
+    height: 20vh;
+    margin-left: 46.5%;   
+}
+#fileName {
+    transform: translateY(-100%);
+}

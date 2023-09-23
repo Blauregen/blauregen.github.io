@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIOL - Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/mainStlye.css">
+    <link rel="stylesheet" href="../style/profile.css">
+    <script src="../scripts/login.js" defer></script>
+    <script src="../scripts/profile.js" defer></script>
+</head>
+
+<body>
+    <img src="../media/profileBackground.png" alt="backgroundImage" id="backgroundImage">
+    <nav>
+        <a href="../index.html"><img src="../media/Logo.png" alt="Logo" id="logo"></a>
+        <ul id="navList">
+            <li><a href="schemMatCalc.html">Schematic Material Calculator</a></li>
+            <li><a href="schemSchematic.html">Schematic Converter</a></li>
+        </ul>
+        <p>Navigate</p>
+    </nav>
+
+    <main>
+        <div id="profileInfo">
+            <div id="profilePic">
+                <img src="" alt="profilePicture" id="profilePicture">
+            </div>
+            <div id="accountInfo">
+                <p id="username">Username: </p>
+                <p id="email">Email: </p>
+                <p id="password">Password: ******</p>
+            </div>
+            <div id="settings">
+                <label type="file" id="changeProfilePicture" for="profileImageUpload">Change Proifle Picture</label>
+                <button id="changeUsername" onclick="changeUsername()">Change Username</button>
+                <button id="changeEmail" onclick="changeEmail()">Change Email</button>
+                <button id="changePassword" onclick="changePassword()">Change Password</button>
+            </div>
+        </div>
+        <div id="recentSchemUploads">
+            <h1>Last Uploaded Schematics</h1>
+            <div id="fileList"></div>
+        </div>
+        <div id="changeBox" style="opacity: 0;">
+
+        </div>
+    </main>
+</body>
+<input type="file" accept="image/*" id="profileImageUpload" style="display: none;">
+<a style="display: none" id="fileDownload"></a>
+
+</html>

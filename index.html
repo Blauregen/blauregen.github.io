@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minecraft AIOL</title>
+    <link rel="stylesheet" href="style/indexStyle.css">
+    <link rel="stylesheet" href="style/mainStlye.css">
+    <script src="./scripts/login.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
+
 <body>
-    <p>Hello World</p>
+    <div id="wrapper">
+        <video src="./media/Background_Video.mp4" id="backgroundVideo" autoplay muted loop></video>
+        <nav>
+            <a href="index.html"><img src="./media/Logo.png" alt="Logo" id="logo"></a>
+            <ul id="navList">
+                <li><a href="pages/schemMatCalc.html">Schematic Material Calculaor</a></li>
+                <li><a href="pages/schemSchematic.html">Schematic Converter</a></li>
+            </ul>
+            <p>Navigate</p>
+        </nav>
+        <main>
+            <h1 class="title">Herzlich Willkommen auf</h1>
+            <h1 class="title"><span id="name">Blauregen's</span> All In One List!</h1>
+        </main>
+    </div>
 </body>
 </html>

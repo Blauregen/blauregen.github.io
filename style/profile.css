@@ -1,0 +1,207 @@
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+#profileInfo {
+    margin-left: 3vw;
+    padding: 3vh;
+    background-color: rgba(213, 213, 213, 0.5);
+    display: flex;
+    border-radius: 10px;
+    margin-right: 3vw;
+    border: solid 4px white;
+    height: 50vh;
+}
+
+#profilePic {
+    position: relative;
+    height: 49vh;
+    width: 68%;
+    margin-right: 2vw;
+    overflow: hidden;
+}
+
+#profilePicture {
+    max-width: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+#accountInfo {
+    width: 160%;
+    font-size: 3vh;
+}
+
+#username, #email, #password {
+    padding-bottom: 3vh;
+}
+
+#username {
+    padding-top: 10vh;
+}
+
+#changeProfilePicture {
+    display: block;
+    margin-top: 3.25vh;
+    width: 29.80vw;
+    padding: 3vh 0 3vh 0;
+    margin-bottom: 3vh;
+    font-size: 2vh;
+    border-radius: 5px;
+    border: solid 2px #D5D5D5FF;
+    background-color: rgba(113, 113, 113, 0.5);
+    cursor: pointer;
+    text-align: center;
+}
+
+#changeUsername, #changeEmail, #changePassword {
+    padding: 3vh;
+    display: inherit;
+    margin-bottom: 3vh;
+    font-size: 2vh;
+    width: 30vw;
+    border-radius: 5px;
+    border: solid 2px #D5D5D5FF;
+    background-color: rgba(113, 113, 113, 0.5);
+    cursor: pointer;
+    text-align: center;
+}
+
+#changeBox {
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+    background-color: rgb(215, 215, 215, 0.9);
+    left: 35%;
+    top: 20%;
+    border-radius: 20px;
+}
+
+#newUsername,#newEmail {
+    color: black;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 75%;
+    height: 10%;
+    background-color: rgb(213, 213, 213, 0.9);
+    border-radius: 20px;
+    border: solid 2px rgb(113, 113, 113);
+
+    font-size: 3vh;
+    padding: 2vw;
+    text-align: center;
+}
+
+#submitUsernameChange,#submitEmailChange {
+    position: absolute;
+    bottom: 25%;
+    left: 12.5%;
+    width: 75%;
+    height: 10%;
+    background-color: rgb(113, 113, 113, 0.9);
+    border-radius: 20px;
+    border: none;
+    font-size: 3vh;
+    cursor: pointer;
+    padding: 2vw 2vw 3.2vw 2vw;
+    text-align: center;
+}
+
+#oldPassword {
+    color: black;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 75%;
+    height: 10%;
+    background-color: rgb(213, 213, 213, 0.9);
+    border-radius: 20px;
+    border: solid 2px rgb(113, 113, 113);
+    font-size: 3vh;
+    padding: 2vw;
+    text-align: center;
+}
+
+#newPassword {
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 75%;
+    height: 10%;
+    background-color: rgb(213, 213, 213, 0.9);
+    border-radius: 20px;
+    border: solid 2px rgb(113, 113, 113);
+    font-size: 3vh;
+    padding: 2vw;
+    text-align: center;
+}
+
+#submitPasswordChange {
+position: absolute;
+    bottom: 7%;
+    left: 12.5%;
+    width: 75%;
+    height: 10%;
+    background-color: rgb(113, 113, 113, 0.9);
+    border-radius: 20px;
+    border: none;
+    font-size: 3vh;
+    cursor: pointer;
+    padding: 2vw 2vw 3.2vw 2vw;
+    text-align: center;
+}
+
+#recentSchemUploads {
+    margin-top: 2vh;
+    margin-left: 3vw;
+    padding: 3vh;
+    background-color: rgba(213, 213, 213, 0.5);
+    display: flex;
+    border-radius: 10px;
+    margin-right: 3vw;
+    border: solid 4px white;
+    flex-wrap: wrap;
+}
+
+#recentSchemUploads > h1 {
+    margin-bottom: 3vh;
+    font-size: 5vh;
+    width: 100%;
+    text-align: center;
+    font-weight: inherit;
+}
+
+#fileList {
+    display: flex;
+    width: 95%;
+    transform: translateX(2.5%);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fileList > div {
+    width: 15%;
+    margin: 1.5%;
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 2px #D5D5D5FF;
+    background-color: rgba(113, 113, 113, 0.5);
+    cursor: pointer;
+}
+#fileList > div > img {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+#fileList > div > p {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}

@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Minecraft";
+    ;
+    src: url(../font/Minecraft.ttf);
+}
+
+:root {
+    --closeButton: #00ffff;
+    --closeButtonActive: #ff0000;
+}
+
+* {
+    font-family: Minecraft, sans-serif;
+    user-select: none;
+}
+
+nav {
+    transform: translateY(-73%);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+nav:hover {
+    transform: translate(0);
+    animation: colored_border 25s ease-in-out alternate infinite;
+    background-size: 300% 300%;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+nav p {
+    left: 48%;
+    position: fixed;
+    top: 66%;
+    font-size: 2.6vh;
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+
+}
+
+nav:hover p {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 3vh;
+    background-color: rgba(133, 133, 133, 0.5);
+    /* 00fff2 */
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 4.5vh;
+    padding-left: 7vw;
+
+}
+
+ul>li {
+    padding: 6vh 2.5vh 5vh 2.5vh;
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+#logo {
+    height: 9vh;
+    top: 3vh;
+    left: 2vw;
+    position: fixed;
+    z-index: 1;
+}
+
+#backgroundImage {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 110%;
+    height: 120%;
+    transform: translateX(5%) translateY(5%);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#login {
+    cursor: pointer;
+}
+
+#loginBox {
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+    background-color: rgb(215, 215, 215, 0.9);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    top: 20vh;
+    left: 35vw;
+}
+
+#loginTitle {
+    position: relative;
+    font-size: 5vh;
+    text-align: center;
+    letter-spacing: 3px;
+    top: 3vh;
+}
+
+#loginUsername,#registerUsername,
+#loginPassword,#registerPassword,
+#registerEmail {
+    margin-left: 10%;
+    width: 80%;
+    height: 5vh;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    border: solid 2px gray;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#loginUsername,#registerUsername {
+    margin-top: 4vh;
+}
+
+#loginPassword,#registerPassword {
+    margin-top: 2vh;
+}
+
+#registerEmail{
+    margin-top: 2vh;
+}
+
+#loginButton,#registerButton {
+    margin-top: 2vh;
+    background-color: rgb(133, 133, 133);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 3px;
+    width: 81%;
+    padding: 2vh;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 2vh;
+    margin-left: 10%;
+}
+
+#changeToRegister {
+    position: relative;
+    font-size: 1.8vh;
+    text-align: center;
+    top: 11vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#changeToLogin {
+    position: relative;
+    font-size: 1.8vh;
+    text-align: center;
+    top: 2vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.loginHidden {
+    opacity: 0;
+}
+
+.loginShown {
+    opacity: 1;
+}
+
+#registerPart {
+    display: none;
+}
+
+#close {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 26.5vw;
+    cursor: pointer;
+}
+
+.leftright {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: var(--closeButton);
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+}
+
+.rightleft {
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: var(--closeButton);
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+}
+
+#close:hover div:nth-of-type(1) {
+    transform: rotate(-45deg);
+    background-color: var(--closeButtonActive);
+}
+
+#close:hover div:nth-of-type(2) {
+    transform: rotate(45deg);
+    background-color: var(--closeButtonActive);
+}
+
+#close:hover label {
+    opacity: 1;
+}

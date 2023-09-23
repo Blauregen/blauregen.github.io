@@ -1,0 +1,18 @@
+Black Carpet      9176
+Grey Carpet       3884
+Cyan Carpet        910
+Dirt               637
+Diamond Block      516
+Carpet             409
+Light Grey Carpet  359
+Light Blue Carpet  189
+Brown Carpet        73
+Red Carpet          69
+Orange Carpet       32
+Purple Carpet       31
+Blue Carpet         29
+Netherrack          25
+Lime Carpet         24
+Green Carpet        10
+Sandstone            9
+Pink Carpet          2

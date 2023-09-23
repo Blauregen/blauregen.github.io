@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIOL - Material Calculator</title>
+    <link rel="stylesheet" href="../style/mainStlye.css">
+    <link rel="stylesheet" href="../style/schemMatCalc.css">
+    <script src="../scripts/schemMatCalc/schemMatCalc.js" defer></script>
+    <script src="../scripts/login.js" defer></script>
+</head>
+<body>
+    <img src="../media/calcualtorBackground.png" alt="backgroundImage" id="backgroundImage">
+    <nav>
+        <a href="../index.html"><img src="../media/Logo.png" alt="Logo" id="logo"></a>
+        <ul id="navList">
+            <li><a href="schemMatCalc.html">Schematic Material Calculaor</a></li>
+            <li><a href="schemSchematic.html">Schematic Converter</a></li>
+
+        </ul>
+        <p>Navigate</p>
+    </nav>
+    <main>
+        <div id="files">
+            <label for="schemUpload" id="dropbox">        
+                <p id="dropText">Drop your file here</p>
+            </label>
+            <div id="clearBox" onclick="clear();">
+                <img src="../media/furnaceOff.png" alt="furnaceOff" class="clear">
+                <img src="../media/furnaceOn.png" alt="furnaceOn" class="clear" id="furOn">
+            </div>
+        </div>
+        <div id="outputBox"></div>
+        <div id="blockInfo" class="blockInfoHidden">
+            <div id="closeInfo" onclick="closeInfo()">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+            </div>
+            <div id="infos">
+                <h1 id="blockNameOverview"></h1>
+                <img src="" alt="recipe" id="recipe">
+            </div>
+        </div>
+    </main>
+    <input type="file" name="schemUpload" id="schemUpload" accept=".txt">
+</body>
+</html>

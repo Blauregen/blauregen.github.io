@@ -1,0 +1,214 @@
+body {
+    height: 100vh;
+}
+
+* {
+    transition: all 0.5s ease-in-out;
+}
+
+#files {
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
+    user-select: none;
+}
+
+#dropbox {
+    width: 85%;
+    height: 5vw;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#dropText {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 1.75vw;
+    margin-bottom: 1vw;
+    color: #431a00;
+}
+
+#clearBox {
+    margin-left: 5vw;
+    padding: 0.5vw;
+    padding-bottom: 0.25%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.clear {
+    height: 4vw;
+    border-radius: 3px;
+}
+
+#backgroundImage {
+    filter: blur(2px);
+}
+
+#outputBox {
+    width: 96vw;
+    margin-left: 2vw;
+    display: flex;
+    transform: translateY(-10vh);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#block {
+    width: 35%;
+    padding-top: 5%;
+    padding-left: 32.5%;
+    padding-right: 32.5%;
+    transform: translateY(-2vh);
+}
+
+#furOn {
+    position: absolute;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#furOn:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.output {
+    width: 17%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin: 2.5%;
+    margin-bottom: 0;
+    height: 35vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.output:hover > p:nth-of-type(1) {
+    opacity: 0;
+}
+
+.output:hover > #block {
+    opacity: 0.5;
+    transform: translateY(10%);
+    width: 80%;
+}
+
+.output:hover > p:not(p:nth-of-type(1)) {
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    font-weight: 20;
+}
+.output:hover > p:nth-of-type(2) {
+    transform: translateY(-900%);
+}
+
+.output:hover > p:nth-of-type(3) {
+    transform: translateY(-700%);
+}
+
+.output:hover > p:nth-of-type(4) {
+    transform: translateY(-500%);
+}
+
+.output>* {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.output>p {
+    margin: 3%;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#blockName {
+    padding-top: 1.5%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#pieces {
+    margin-bottom: 0;
+}
+
+nav:hover~main>#files {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#schemUpload {
+    display: none;
+}
+
+#blockInfo {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: solid 2px rgb(113,113,113);
+    top: 6vh;
+    left: 5vw;
+    display: block;
+}
+
+#closeInfo {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.blockInfoShown {
+    transform: translateY(0);
+}
+
+.blockInfoHidden {
+    transform: translateY(-110%);
+}
+
+#closeInfo:hover div:nth-of-type(1) {
+    transform: rotate(-45deg);
+    background-color: var(--closeButtonActive);
+}
+
+#closeInfo:hover div:nth-of-type(2) {
+    transform: rotate(45deg);
+    background-color: var(--closeButtonActive);
+}
+
+#closeInfo:hover label {
+    opacity: 1;
+}
+
+#blockNameOverview {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 3.7%;
+    font-weight: inherit;
+    letter-spacing: 3px;
+}
+
+#recipe {
+    width: 70%;
+    margin-left: 15%;
+
+}
